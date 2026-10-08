@@ -11,14 +11,14 @@ A Power BI dashboard built on synthetic utility billing data to demonstrate reve
 
 # Data Model
 Synthetic dataset covering 2,500 customers and 20,000 billing records from January 2024 through August 2026, across three tables:
-- Customers (2,500 rows) — `CustomerID`, `CustomerClass`, `ServiceArea`, `RateType`, `StartDate`
-- Bills (20,000 rows) — `BillID`, `CustomerID`, `BillingDate`, `Usage_kWh`, `BillAmount`, `AmountPaid`, `PaymentStatus`, `PaymentDate`, `ServiceArea`, `CustomerClass`
-- Date — standalone calendar table for time intelligence, related to `Bills` on `BillingDate`
+- **Customers** (2,500 rows) — `CustomerID`, `CustomerClass`, `ServiceArea`, `RateType`, `StartDate`
+- **Bills** (20,000 rows) — `BillID`, `CustomerID`, `BillingDate`, `Usage_kWh`, `BillAmount`, `AmountPaid`, `PaymentStatus`, `PaymentDate`, `ServiceArea`, `CustomerClass`
+- **Date** — standalone calendar table for time intelligence, related to `Bills` on `BillingDate`
 
 # Report Pages
-1. Executive Overview — standard KPIs (Total Revenue, Total Customers, Total kWh, Average Bill, Collection Rate) alongside revenue trend by month, revenue by customer class, revenue by service area, and kWh usage by month. The Year slicer (top right) filters all visuals, because the two line charts default to showing all three years (2024-2026) of monthly data when no year is selected. The Year slicer is also available to specify individual years for the next two pages.
-2. Revenue Analysis — Residential/Commercial/Industrial revenue and Revenue per Customer KPIs, a dual-axis Total Revenue vs. Prior Year Revenue trend line for year-over-year comparison, and revenue by service area
-3. Customer & Billing — Average Bill, Collection Rate, Outstanding Bills, and Partial Bills KPIs, customer counts by class, a payment-status breakdown (Paid, Paid Late, Partial, Outstanding) by month, a table of the top 10% highest-billed customer classes, and a ranked table of these highest-billed individual customers
+1. **Executive Overview** — standard KPIs (Total Revenue, Total Customers, Total kWh, Average Bill, Collection Rate) alongside revenue trend by month, revenue by customer class, revenue by service area, and kWh usage by month. The Year slicer (top right) filters all visuals, because the two line charts default to showing all three years (2024-2026) of monthly data when no year is selected. The Year slicer is also available to specify individual years for the next two pages.
+2. **Revenue Analysis** — Residential/Commercial/Industrial revenue and Revenue per Customer KPIs, a dual-axis Total Revenue vs. Prior Year Revenue trend line for year-over-year comparison, and revenue by service area
+3. **Customer & Billing** — Average Bill, Collection Rate, Outstanding Bills, and Partial Bills KPIs, customer counts by class, a payment-status breakdown (Paid, Paid Late, Partial, Outstanding) by month, a table of the top 10% highest-billed customer classes, and a ranked table of the highest-billed individual customers
 
 # Key DAX Measures
 **Revenue**
