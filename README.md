@@ -1,4 +1,4 @@
-## Electric Utility Revenue & Billing Dashboard ##
+# Electric Utility Revenue & Billing Dashboard
 
 # Overview
 A Power BI dashboard built on synthetic utility billing data to demonstrate revenue analysis, customer billing trends, and executive-level reporting for a municipal utility operations context.
