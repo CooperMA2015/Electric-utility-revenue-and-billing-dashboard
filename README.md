@@ -39,7 +39,7 @@ Synthetic dataset covering 2,500 customers and 20,000 billing records from Janua
 - **Large Commercial customers are a disproportionate revenue driver**: They make up approximately 6.8% of the customer base (171 of 2,500 accounts) but generate 36.4% of total revenue ($3.05M of $8.38M), while Residential accounts for 78.8% of customers (1,971 accounts) but only 30.2% of revenue ($2.53M) — a typical concentration pattern worth flagging for revenue assurance focus.
 - **Revenue is strongly seasonal**: Revenue peaks from roughly June-September and dropping sharply from October through December, following the trend of cooling-driven summer electricity demand.
 - **Collection performance is solid but has room for improvement**: Of 20,000 bills, 1,080 (5.4%) are Outstanding and 519 (2.6%) are Partial, with another 2,382 (11.9%) Paid Late — a 93.68% collection rate overall, but nearly 1 in 5 bills involves some payment friction.
-- **Eastside and Westside are the top-revenue service areas** They are about $1.5M+ each, while Downtown and Rural trail furthest behind, which could inform where to prioritize revenue-assurance or outreach efforts.
+- **Eastside and Westside are the top-revenue service areas**: They are about $1.5M+ each, while Downtown and Rural trail furthest behind, which could inform where to prioritize revenue-assurance or outreach efforts.
 
 # Technologies Used
 - Power BI Desktop (data modeling, DAX, report design)
